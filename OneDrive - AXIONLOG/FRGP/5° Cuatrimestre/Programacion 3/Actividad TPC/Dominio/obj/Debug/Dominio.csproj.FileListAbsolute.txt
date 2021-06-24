@@ -1,0 +1,20 @@
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\bin\Debug\Dominio.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\bin\Debug\Dominio.pdb
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\bin\Debug\AccessoDatos.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\bin\Debug\AspNet.ScriptManager.bootstrap.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\bin\Debug\AccessoDatos.pdb
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\obj\Debug\Dominio.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Dominio\obj\Debug\Dominio.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\bin\Debug\Dominio.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\bin\Debug\Dominio.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\bin\Debug\AccessoDatos.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\bin\Debug\AspNet.ScriptManager.bootstrap.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\bin\Debug\AccessoDatos.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\obj\Debug\Dominio.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Dominio\obj\Debug\Dominio.pdb

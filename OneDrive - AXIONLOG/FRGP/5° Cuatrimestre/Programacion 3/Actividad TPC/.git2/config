@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/Silva-Carlos-Andres/Actividad-TPC.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "Articulos"]
+	remote = origin
+	merge = refs/heads/main
+[gui]
+	wmstate = normal
+	geometry = 893x435+26+26 175 196
+[remote "upstream"]
+	url = url
+	fetch = +refs/heads/*:refs/remotes/upstream/*
+[branch "Update1"]
+	remote = origin
+	merge = refs/heads/Update1

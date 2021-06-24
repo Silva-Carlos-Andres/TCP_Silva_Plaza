@@ -1,0 +1,36 @@
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\bin\Debug\Business.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\bin\Debug\Business.pdb
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\bin\Debug\AccessoDatos.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\bin\Debug\AspNet.ScriptManager.bootstrap.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\bin\Debug\Dominio.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\bin\Debug\AccessoDatos.pdb
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\bin\Debug\Dominio.pdb
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\obj\Debug\Business.dll
+C:\Users\es-acasilva\OneDrive - AXIONLOG\FRGP\5° Cuatrimestre\Programacion 3\Actividad TPC\Business\obj\Debug\Business.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\bin\Debug\Business.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\bin\Debug\Business.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\bin\Debug\AccessoDatos.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\bin\Debug\AspNet.ScriptManager.bootstrap.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\bin\Debug\Dominio.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\bin\Debug\AccessoDatos.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\bin\Debug\Dominio.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\obj\Debug\Business.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\Actividad-TPC\Business\obj\Debug\Business.pdb
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\bin\Debug\Business.dll
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\bin\Debug\Business.pdb
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\bin\Debug\AccessoDatos.dll
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\bin\Debug\AspNet.ScriptManager.bootstrap.dll
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\bin\Debug\Dominio.dll
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\bin\Debug\AccessoDatos.pdb
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\bin\Debug\Dominio.pdb
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\obj\Debug\Business.dll
+C:\Users\es-acasilva\Downloads\Actividad-TPC-main (2)\Actividad-TPC-main\Business\obj\Debug\Business.pdb
