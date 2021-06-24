@@ -45,7 +45,8 @@
                <%-- <input id= "textnombre" clientIDMode="Static" type="text" class="form-control" placeholder="Search products...">--%>
                 <asp:TextBox Text="Escriba..." ID="textnombre" ClientIDMode="Static" CssClass="form-control" runat="server"></asp:TextBox>
                   <span class="input-group-btn">
-                  <button class="btn btn-primary" type="submit">
+                  <%--<button class="btn btn-primary" type="submit">--%>
+                      <asp:Button text="Buscar" ID="btnBuscar" autoPostBack="false" OnClientClick="return validar()" OnClick="btnBuscar_Click" CssClass="form-control" runat="server" />
                     <i class="fa fa-search"></i>
                   </button>
                 </span>

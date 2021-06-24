@@ -34,5 +34,10 @@ namespace TPC_Silva_Plaza
                 Response.Redirect("Error.aspx");
             }
         }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
