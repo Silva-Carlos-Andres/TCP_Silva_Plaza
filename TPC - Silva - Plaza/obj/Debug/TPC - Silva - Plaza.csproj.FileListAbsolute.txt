@@ -125,3 +125,18 @@ C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Pla
 C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.xml
 C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.Deployment.xml
 C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.Razor.xml
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.Helpers.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.Razor.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.Deployment.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.Razor.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.Helpers.xml
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.Razor.xml
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.xml
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.Deployment.xml
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\System.Web.WebPages.Razor.xml
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Business.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Dominio.dll
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Business.pdb
+C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Dominio.pdb
