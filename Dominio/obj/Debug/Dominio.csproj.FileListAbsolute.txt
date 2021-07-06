@@ -4,3 +4,9 @@ C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Dominio\obj\Deb
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Dominio\obj\Debug\Dominio.dll
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Dominio\obj\Debug\Dominio.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Dominio\bin\Debug\Dominio.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Dominio\bin\Debug\Dominio.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Dominio\obj\Debug\Dominio.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Dominio\obj\Debug\Dominio.pdb

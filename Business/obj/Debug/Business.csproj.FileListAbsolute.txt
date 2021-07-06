@@ -7,3 +7,12 @@ C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Business\obj\De
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Business\obj\Debug\Business.dll
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\Business\obj\Debug\Business.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\obj\Debug\Business.csproj.AssemblyReference.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\obj\Debug\Business.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\obj\Debug\Business.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\bin\Debug\Business.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\bin\Debug\Business.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\bin\Debug\Dominio.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\bin\Debug\Dominio.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\Business\obj\Debug\Business.csproj.CopyComplete

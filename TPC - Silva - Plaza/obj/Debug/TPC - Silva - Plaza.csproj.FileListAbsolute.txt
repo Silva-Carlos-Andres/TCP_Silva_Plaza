@@ -140,3 +140,7 @@ C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - P
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Dominio.dll
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Business.pdb
 C:\Users\es-acasilva\Documents\Actividad TPC\TPC - Silva - Plaza\TPC - Silva - Plaza\bin\Dominio.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Plaza\bin\Business.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Plaza\bin\Dominio.dll
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Plaza\bin\Business.pdb
+C:\Users\valen\Desktop\Facultad\Programacion 3\TCP_Silva_Plaza\TPC - Silva - Plaza\bin\Dominio.pdb

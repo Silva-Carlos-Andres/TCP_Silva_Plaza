@@ -2,7 +2,7 @@
 
 namespace Dominio
 {
-    class Vendedor
+    public class Vendedor
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
@@ -11,5 +11,10 @@ namespace Dominio
         public bool Estado { get; set; }
         public int DNI { get; set; }
         public decimal Sueldo { get; set; }
+
+        public Vendedor(int IdVendedor)
+        {
+            Id = IdVendedor;
+        }
     }
 }

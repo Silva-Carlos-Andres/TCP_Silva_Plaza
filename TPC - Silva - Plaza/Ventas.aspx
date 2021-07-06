@@ -3,31 +3,26 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-   <!-- 
-    <asp:sqldatasource id="Ventas"
-    selectcommand="SELECT * FROM Ventas"
-    connectionstring="data source=.\\SQLEXPRESS; initial catalog=SILVA_PLAZA_DB; integrated security=sspi" 
-    runat="server"/>
-
-    <asp:gridview id="VentasGridView" 
-    datasourceid="Ventas" 
-    autogeneratecolumns="False"
-    emptydatatext="No data available." 
-    allowpaging="True" 
-    runat="server" DataKeyNames="ID">
-    <Columns>
-        <asp:BoundField DataField="ID" HeaderText="ID" 
-            InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-        <asp:BoundField DataField="FECHA" HeaderText="FECHA" 
-            SortExpression="FECHA" />
-        <asp:BoundField DataField="IDARTICULO" HeaderText="IDARTICULO" 
-            SortExpression="IDARTICULO" />
-        <asp:BoundField DataField="IDVENDEDOR" HeaderText="IDVENDEDOR" 
-            SortExpression="IDVENDEDOR" />
-        <asp:BoundField DataField="PRECIO" HeaderText="PRECIO" 
-            SortExpression="PRECIO" />
-    </Columns>
-    </asp:GridView>
-    -->
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Vendedor</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% foreach (Dominio.Venta item in lista)
+            {%>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+        <%} %>
+        </tbody>
+    </table>
 
 </asp:Content>

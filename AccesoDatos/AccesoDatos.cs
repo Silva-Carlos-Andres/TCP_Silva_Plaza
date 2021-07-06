@@ -21,7 +21,7 @@ namespace Business
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog=DB; integrated security=sspi");
+            conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog=SILVA_PLAZA_DB; integrated security=sspi");
             comando = new SqlCommand();
         }
 

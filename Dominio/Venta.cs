@@ -2,13 +2,13 @@
 
 namespace Dominio
 {
-    class Venta
+    public class Venta
     {
         public int Id { get; set; }
         public int Cantidad { get; set; }
         public DateTime Fecha { get; set; }
-        public Articulo IdArticulo { get; set; }
-        public Vendedor IdVendedor { get; set; }
+        public Articulo Articulo { get; set; }
+        public Vendedor Vendedor { get; set; }
         public Decimal Precio { get; set; }
     }
 }
