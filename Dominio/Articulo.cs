@@ -12,6 +12,10 @@ namespace Dominio
         public Decimal Precio { get; set; }
         public Marca Marca { get; set; }
         public Categoria Categoria { get; set; }
+        //public Articulo(int IdArticulo)
+        //{
+        //    Id = IdArticulo;
+        //}
 
     }
 }

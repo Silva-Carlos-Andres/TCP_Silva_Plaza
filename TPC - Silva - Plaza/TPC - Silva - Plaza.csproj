@@ -90,6 +90,7 @@
     <Content Include="bin\TPC - Silva - Plaza.dll" />
     <Content Include="bin\TPC - Silva - Plaza.pdb" />
     <Content Include="Compras.aspx" />
+    <Content Include="Styles\Styles.css" />
     <Content Include="Ventas.aspx" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />

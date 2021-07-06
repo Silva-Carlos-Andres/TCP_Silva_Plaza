@@ -13,20 +13,26 @@ namespace TPC___Silva___Plaza
     {
         public List<Proveedor> SProveedor;
         public List<Proveedor> LProveedores;
+        public List<Compra> LCompras;
+        public List<Articulo> LArticulos;
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            ProveedorBusiness Business = new ProveedorBusiness();
+            ProveedorBusiness PBusiness = new ProveedorBusiness();
+            
 
             try
             {
-                ListProv.DataSource = Business.ListarProv();
-                List<Proveedor> ListProveedores = Business.ListarProv();
+                if (!IsPostBack)
+                { 
+
+                ListProv.DataSource = PBusiness.ListarProv();
+                List<Proveedor> ListProveedores = PBusiness.ListarProv();
                 Session["ListaProveedores"] = ListProveedores;
                 ListProv.DataTextField = "Nombre";
                 ListProv.DataValueField = "ID";
                 ListProv.DataBind();
-
+                }
             }
             catch (Exception ex)
             {
@@ -36,33 +42,38 @@ namespace TPC___Silva___Plaza
 
         }
 
-
-
-        protected void btnContinue_Click(object sender, EventArgs e)
-        {
-            ProveedorBusiness Business = new ProveedorBusiness();
-            
-
-            txtid.Visible = true;
-            txtid.EnableViewState = true;
-            txtnombre.Visible = true;
-            txtnombre.EnableViewState = true;
-            txtemail.Visible = true;
-            txtemail.EnableViewState = true;
-            txtcuit.Visible = true;
-            txtcuit.EnableViewState = true;
-
-            string algo = (string)Session["id"];
-            SProveedor = Business.BuscarProv(algo);
-
-            SelectProveedores.DataSource = SProveedor;
-            SelectProveedores.DataBind();
-        }
-
         protected void ListProv_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ComprasBusiness CBusiness = new ComprasBusiness();
+            
+            List<Compra> LCompras = CBusiness.Listar();
+            Session["ListaCompras"] = LCompras;
+
+            ComprasBusiness ABusiness = new ComprasBusiness();
+
+            List<Compra> LArticulos = ABusiness.Listar();
+            Session["ListaArticulos"] = LArticulos;
+
+            dgvArticulos.DataSource = Session["ListaArticulos"];
+            dgvArticulos.DataBind();
+
             int id = int.Parse(ListProv.SelectedItem.Value);
-            txtnombre.Text = Convert.ToString(((List<Proveedor>)Session["ListaProveedores"]).FindAll(x => x.Id == id));
+            DgvProveedor.DataSource = ((List<Proveedor>)Session["ListaProveedores"]).FindAll(x => x.Id == id);
+            DgvProveedor.DataBind();
+
+
+            repetidor.DataSource = LCompras;
+            repetidor.DataBind();
+        }
+
+        protected void ddlCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ddlMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

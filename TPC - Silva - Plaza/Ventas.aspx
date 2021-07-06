@@ -13,7 +13,7 @@
             </tr>
         </thead>
         <tbody>
-            <% foreach (Dominio.Venta item in lista)
+         <%--   <% foreach (Dominio.Venta item in lista)
             {%>
             <tr>
                 <th scope="row">1</th>
@@ -21,7 +21,7 @@
                 <td>Otto</td>
                 <td>@mdo</td>
             </tr>
-        <%} %>
+        <%} %>--%>
         </tbody>
     </table>
 

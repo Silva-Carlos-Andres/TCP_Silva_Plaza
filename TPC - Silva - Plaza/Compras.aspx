@@ -1,20 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Index.Master" AutoEventWireup="true" CodeBehind="Compras.aspx.cs" Inherits="TPC___Silva___Plaza.Compras" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <head>
 
-        <title>My Site</title>
+        
 
-
-  <meta charset="utf-8">
- 
-
-  <link rel="stylesheet" href="chosen/chosen.css">
-
-  <meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos;; script-src &apos;self&apos; https://ajax.googleapis.com; style-src &apos;self&apos;; img-src &apos;self&apos; data:">
-            <script src="https://kit.fontawesome.com/86f5330d7d.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-</head>
+  
         <script>
         function validar() {
 
@@ -56,76 +45,110 @@
             alert(selected);*/
         }
          </script>
-
-
+    <form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScripManager1" runat="server"></asp:ScriptManager>
 
     <a>Ingreso de Compras</a>
 
 
-<%--           <% foreach (Dominio.Proveedor item in lista)
-            {%>
-            <div class="col">
-                <div class="card">
-                    <div class="card-group">
-                        <img src="<% = item.ImagenUrl %>" class="card-img-top" alt="Card image cap">
-                        <h5 class="card-title"><% = item.Nombre %>
-                            </h5>
-                            </div>
-                        <p class="card-text"><% = item.Descripcion %></p>
-                            <ul class="list-group list-group-flush">
-                            </ul>
-                            
-                        <div class="card-footer bg-transparent border-success"><h6><s>$<% = (item.Precio) + 200 %></s> Envio Gratis</h6></div>
-                        <div class="text-center">$<% = item.Precio %></div>
-                        <a href="Carrito.aspx?codigo=<% = item.Codigo %>" class="stretched-link"></a>
-
-                </div>
-            </div>
-            <%} %>--%>
-
-
                 <h4><b>Seleccione el Proveedor</b></h4>
+
                     
-                    <%--<asp:Repeater ID="ListProveedores" runat="server">
-                        <ItemTemplate>
-                        <select id="selectid" class="form-select" size="5" aria-label="size 5 select example">
-                            <option value=<%# Eval("ID")%>><%# Eval("ID")%>-<%# Eval("Nombre")%></option>
-                        </select>
-                            </ItemTemplate>
-                    </asp:Repeater>--%>
-                    <form id="Form1" runat="server">
-                       <asp:Label Text="Seleccione el Proveedor" runat="server"></asp:Label>
-                        <asp:DropDownList runat="server" ID="ListProv" CssClass="btn btn-outline-dark dropdown-toggle" AutoPostBack="true"
-                            OnSelectedIndexChanged="ListProv_SelectedIndexChanged"></asp:DropDownList>
-                        
+                       <asp:UpdatePanel runat="server">
+                            <ContentTemplate>
+                                
+                                <div class="form-group">
+                                    <div class="row">
+                       
+                        <asp:DropDownList runat="server" ID="ListProv" CssClass="mydropdownlist1" AutoPostBack="true"
+                            OnSelectedIndexChanged="ListProv_SelectedIndexChanged">
+                             <asp:ListItem Value="0">&lt;Seleccione un Proveedor...&gt;</asp:ListItem>
+                        </asp:DropDownList>
+                        </div>
                      
 <%--                         <asp:Button Text="Cargar" ID="btnContinue" autopostback="false" OnClientClick="return validar()" OnClick="btnContinue_Click" CssClass="btn btn-primary" runat="server" />
                          --%>
 
                          <br />
-                         <br />
-                    <h4><b>Proveedor Seleccionado</b></h4>
 
-                         <div id="contenedor"></div>
+                    
 
-                         <label id="txtid1" runat="server"></label>
-                         <asp:Label ID="txtid" Text="Seleccione una proveedor" EnableViewState="false" runat="server"></asp:Label><br />
-                         <asp:Label ID="txtnombre" Visible="false" EnableViewState="false" runat="server"></asp:Label><br />
-                         <asp:Label ID="txtemail" Visible="false" EnableViewState="false" runat="server"></asp:Label><br />
-                         <asp:Label  ID="txtcuit" Visible="false" EnableViewState="false" runat="server"></asp:Label><br />
-                         <label>Nombre: <input type="text" id="nombre" name="nombre" /></label>
+                         
 
-                    <asp:Repeater ID="SelectProveedores" runat="server">
-                        <ItemTemplate>
-                          
-                            </ItemTemplate>
-                    </asp:Repeater>
+                         
+                                    <asp:GridView ID="DgvProveedor" runat="server"></asp:GridView><br /><br />
+
+                                    <h4><b>Agregue los productos</b></h4>
+                                    <label>Buscar por ID: <input type="text" id="txtid" name="nombre" /></label>
+                                    <div class="row">
+                                        <h4><b>Buscar por filtro</b></h4>
+                                        <div class="col">
+                                            <asp:Label Text="Categoria" runat="server"></asp:Label>
+                                            <asp:DropDownList runat="server" ID="ddlCategoria" CssClass="mydropdownlist1" class="btn btn-outline" AutoPostBack="true"
+                                                 OnSelectedIndexChanged="ddlCategoria_SelectedIndexChanged"></asp:DropDownList>
+                                            
+                                            <asp:Label Text="Marca" runat="server"></asp:Label>
+                                            <asp:DropDownList runat="server" ID="ddlMarca" CssClass="mydropdownlist1" class="btn btn-outline" AutoPostBack="true"
+                                                 OnSelectedIndexChanged="ddlMarca_SelectedIndexChanged"></asp:DropDownList>
 
 
-                         <asp:Label ID="txtCampo" Visible="false" EnableViewState="false" runat="server"></asp:Label>
+                                        </div>
+                                        
+                                            <div class="col">
+                                                <asp:GridView ID="dgvArticulos" runat="server"></asp:GridView><br /><br />
 
-                             
-                         </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <label>Buscar por ID: <input type="text" id="nombre" name="nombre" /></label>
+
+
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Vendedor</th>
+                                                <th scope="col">Precio</th>
+                                                <th scope="col">Fecha</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                          <asp:Repeater runat="server" ID="repetidor">
+                                                <ItemTemplate> 
+                                                        <tbody>
+                                                            <tr>                    
+                                                                <%--<td><img src="<%#Eval("ImagenUrl") %>" class="card-img-top"></td>--%>
+                                                                <td style="padding-top:4rem;"><%#Eval("IdArticulo") %></td>
+                                                                <td style="padding-top:4rem;">$<%#Eval("Precio") %></td>                           
+                               
+                                                                <%--<td style="padding-top:4rem;"><asp:TextBox TextMode="Number" text='$<%# Session["Cant"].ToString() %>' ID="txtCantidad" min="1" max="20" AutoPostBack="true"  OnTextChanged="txtCantidad_TextChanged" runat="server" />--%>
+                                
+                                                                <td style="padding-top:4rem;"><'$<%# Session["Cant"].ToString() %>' * <%#Eval("Precio") %>></td>
+                            
+                           
+                               
+                                                                <%--<td style="padding-top:4rem;""><asp:Button Style="background-image:url('imagenes/Iconos/delete.png');" class="quitar" ID="Button1" CommandArgument='<%#Eval("Codigo")%>' CommandName="CodArticulo" runat="server" OnClick="EliminarArticuloCarrito" /></td>--%>
+                            
+                                
+                                                            </tr>
+                                                        </tbody> 
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </tbody>
+                                    </table>
+                        
+                         
+
+                
+
+
+                         
+
+                                    </div>
+                                
+                              </ContentTemplate>
+                             </asp:UpdatePanel>
+                 </form>            
                         
 
 

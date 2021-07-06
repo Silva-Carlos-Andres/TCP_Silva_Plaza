@@ -8,5 +8,10 @@
         public string Email { get; set; }
         public bool Estado { get; set; }
         public int CUIT { get; set; }
+        //public Proveedor(int IdProveedor)
+        //{
+        //    Id = IdProveedor;
+        //}
     }
+
 }
