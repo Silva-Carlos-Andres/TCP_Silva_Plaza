@@ -25,10 +25,11 @@ namespace Business
                     aux.Nombre = (string)datos.Lector["Nombre"];
 
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
-                   // aux.Marca = new Marca((string)datos.Lector["Marca"]);
-                   // aux.Categoria = new Categoria((string)datos.Lector["Categoria"]);
+                    aux.Marca = new Marca((string)datos.Lector["Marca"]);
+                    aux.Categoria = new Categoria((string)datos.Lector["Categoria"]);
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
-                    aux.Precio = (decimal)datos.Lector["Precio"];
+                    aux.Precio = Convert.ToInt32((decimal)datos.Lector["Precio"]);
+                    //aux.Cantidad = (int)datos.Lector["Stock"];
 
                     //lista.Add(new Articulo((int)datos.Lector["Id"]));
                     lista.Add(aux);
