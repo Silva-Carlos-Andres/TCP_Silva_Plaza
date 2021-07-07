@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Index.Master" AutoEventWireup="true" CodeBehind="Ventas.aspx.cs" Inherits="TPC___Silva___Plaza.WebForm1" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Index.Master" AutoEventWireup="true" CodeBehind="Ventas.aspx.cs" Inherits="TPC___Silva___Plaza.Ventas" %>
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -13,15 +13,15 @@
             </tr>
         </thead>
         <tbody>
-         <%--   <% foreach (Dominio.Venta item in lista)
+         <% foreach (Dominio.Venta item in ventas)
             {%>
             <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <th scope="row"><% = item.Id %></th>
+                <td>Falta</td>
+                <td><% = item.Precio %></td>
+                <td><% = item.Fecha %></td>
             </tr>
-        <%} %>--%>
+        <%} %>
         </tbody>
     </table>
 

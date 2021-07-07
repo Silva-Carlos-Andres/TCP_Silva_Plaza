@@ -11,19 +11,18 @@ namespace TPC___Silva___Plaza
 {
     public partial class Ventas : System.Web.UI.Page
     {
-        public List<Venta> lista;
+        public List<Venta> ventas;
         protected void Page_Load(object sender, EventArgs e)
         {
 
             VentasBusiness Business = new VentasBusiness();
             try
             {
-                lista = Business.Listar();
+                ventas = Business.Listar();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw ex;                
             }
 
         }

@@ -24,7 +24,7 @@ namespace Business
 
                     aux.Id = (int)datos.Lector["ID"];
                     aux.Fecha = (DateTime)datos.Lector["FECHA"];
-                    aux.Vendedor = new Vendedor((int)datos.Lector["IDVENDEDOR"]);
+                    //aux.Vendedor = new Vendedor((int)datos.Lector["IDVENDEDOR"]);
                     aux.Precio = (Decimal)datos.Lector["PRECIO"];
 
                     lista.Add(aux);
