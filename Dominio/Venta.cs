@@ -5,10 +5,10 @@ namespace Dominio
     public class Venta
     {
         public int Id { get; set; }
-        public int Cantidad { get; set; }
         public DateTime Fecha { get; set; }
-        public Articulo Articulo { get; set; }
-        public Vendedor Vendedor { get; set; }
-        public Decimal Precio { get; set; }
+        public int IdCliente { get; set; }
+        public int[] Articulos { get; set; }
+        public int IdVendedor { get; set; }
+        public Decimal Monto { get; set; }
     }
 }
