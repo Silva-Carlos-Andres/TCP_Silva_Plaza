@@ -2,5 +2,5 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-<h1>Aqui va la pasta</h1>
+<h1></h1>
 </asp:Content>

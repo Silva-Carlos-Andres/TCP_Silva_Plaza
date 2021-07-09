@@ -417,9 +417,9 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Alta</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Baja</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Modificación</a></li>
+                <li><a href="/Clientes.aspx"><i class="fa fa-circle-o"></i> AMB</a></li>
+<%--                <li><a href="#"><i class="fa fa-circle-o"></i> Baja</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Modificación</a></li>--%>
 
 <%--                <li class="treeview">
                   <a href="#"><i class="fa fa-circle-o"></i> Level Two
@@ -444,9 +444,9 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Alta</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Baja</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Modificación</a></li>
+                <li><a href="/Proveedores.aspx"><i class="fa fa-circle-o"></i> AMB</a></li>
+<%--                <li><a href="#"><i class="fa fa-circle-o"></i> Baja</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Modificación</a></li>--%>
 
 <%--                <li class="treeview">
                   <a href="#"><i class="fa fa-circle-o"></i> Level Two
@@ -471,9 +471,9 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Alta</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Baja</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Modificación</a></li>
+                <li><a href="/Vendedor.aspx"><i class="fa fa-circle-o"></i> AMB</a></li>
+<%--                <li><a href="#"><i class="fa fa-circle-o"></i> Baja</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Modificación</a></li>--%>
 
 <%--                <li class="treeview">
                   <a href="#"><i class="fa fa-circle-o"></i> Level Two

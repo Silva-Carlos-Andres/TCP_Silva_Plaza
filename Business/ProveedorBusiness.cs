@@ -15,7 +15,7 @@ namespace Business
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("select *from proveedor");
+                datos.setearConsulta("select *from proveedor where Estado=1");
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -63,6 +63,67 @@ namespace Business
                     lista.Add(aux);
                 }
                 return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public void agregar(Proveedor Proveedores)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                
+                datos.setearConsulta("INSERT INTO PROVEEDOR( Nombre, DIRECCION, EMAIL, CUIT, ESTADO) values('" + Proveedores.Nombre + "','" + Proveedores.Direccion + "', '" + Proveedores.Email + "', '" + Proveedores.CUIT + "', '1')");
+                datos.ejectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public void eliminar(int txtsearch)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+
+                datos.setearConsulta("UPDATE PROVEEDOR set ESTADO='2' where IDPROVEEDOR = '" + txtsearch + "'");
+                datos.ejectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public int LastID()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("select MAX(IDPROVEEDOR) as LASTID  from PROVEEDOR");
+                datos.ejecutarLectura();
+                int cantidad =0;
+                while (datos.Lector.Read())
+                {
+                    Proveedor aux = new Proveedor();
+                    cantidad = Convert.ToInt32(datos.Lector["LASTID"]);
+                    
+                }
+                return cantidad;
             }
             catch (Exception ex)
             {

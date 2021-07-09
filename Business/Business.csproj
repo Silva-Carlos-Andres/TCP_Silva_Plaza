@@ -44,6 +44,7 @@
     <Compile Include="AccesoDatos.cs" />
     <Compile Include="ArticuloBusiness.cs" />
     <Compile Include="CategoriaBusiness.cs" />
+    <Compile Include="ClienteBusiness.cs" />
     <Compile Include="ComprasBusiness.cs" />
     <Compile Include="VentasBusiness.cs" />
     <Compile Include="MarcaBusiness.cs" />
