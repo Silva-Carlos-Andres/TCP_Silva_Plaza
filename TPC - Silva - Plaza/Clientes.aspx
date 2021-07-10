@@ -12,13 +12,14 @@
 }
         </script>
     <h4>AMB Clientes</h4>
-    <form id="Form2" runat="server">
+    <form id="Clientes" runat="server">
 
 
         <%--NO BORRAR -SE CONFIRMA LA PREGUNTA AL USUARIO--%>
         <asp:textbox Visible="false" id="txtInput" runat="server" />
-
-
+        <asp:ScriptManager ID="ScripManager2" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
 
     <asp:Label Text="Nombre : " runat="server" />
     <asp:TextBox ID="txtnombre" runat="server" />
@@ -27,12 +28,14 @@
         <input id="txtemail" size="30" type="email" name="email" value="" runat="server" />
 
          <asp:Label Text="Cuit : " runat="server" />
-        <input id="txtcuit" type="number" name="numero" value="" runat="server" />
+        <%--<input id="txtcuit" type="number" name="numero" value="" runat="server" />--%>
+        <asp:TextBox ID="txtcuit1" runat="server" />
 
          <asp:Label Text="Dirreccion : " runat="server" />
     <asp:TextBox ID="txtDir" Width="255" runat="server"/>
 
-        <asp:ImageButton ID="btn_agregar" OnClick="btn_agregar_Click" ImageUrl="../Resources/add_person1.png" runat="server" />
+        <%--<asp:ImageButton ID="btn_agregar" OnClick="btn_agregar_Click" ImageUrl="../Resources/add_person1.png" runat="server" />--%>
+        <asp:Button Text="Agregar" CommandArgument='<%#Eval("id") %>' ID="btnagregar" OnClick="btnagregar_Click1" runat="server" />
 
 
         
@@ -49,23 +52,6 @@
             </tr>
         </thead>
         <tbody>
-        <%-- <% foreach (Dominio.Proveedor item in Proveedors)
-            {%>
-            <tr>
-                <th scope="row"><% = item.Id %></th>
-                <td><% = item.Nombre %></td>
-                <td><% = item.Email %></td>
-                <td><% = item.CUIT %></td>
-                <td><asp:ImageButton ImageUrl="../Resources/edit_person.png" runat="server" /></td>
-               <td><asp:ImageButton ImageUrl="../Resources/delete_person.png" CommandArgument="'<% = item.Id %>'" runat="server" /></td>
-               <td> <asp:Button Style="background-image:url('../Resources/delete_person.png');" ID="btnBorrar" CommandArgument="<%#Eval("id") %>" CommandName="IDClient" runat="server" OnClick="btnBorrar_Click" /></td>
-            </tr>
-        <%} %>--%>
-
-
-
-
-
 
             <asp:Repeater runat="server" ID="repetidor">
             <ItemTemplate> 
@@ -75,7 +61,9 @@
                             <td><%#Eval("Nombre") %></td>
                             <td><%#Eval("Email") %></td>
                             <td><%#Eval("CUIT") %></td>
-                            <td><asp:ImageButton ImageUrl="../Resources/edit_person.png" runat="server" /></td>
+                            <td>
+                                 <asp:Button Text="Editar" CommandArgument='<%#Eval("id") %>' ID="btneditar" CommandName="IDCliente" OnClick="btneditar_Click" AutoPostBack="true" runat="server" />
+                            </td>
                             <%--<td><asp:ImageButton ImageUrl="../Resources/delete_person.png" CommandArgument='<%#Eval("id") %>' ID="btnBorrar" CommandName="IDClient" OnClick="btnBorrar_Click" runat="server" /></td>--%>
                             <%-- <td> <asp:Button  Style="background-image:url('Resources/delete_person.png');" ID="btnBorrar" CommandArgument=<%#Eval("id") %> CommandName="IDClient" runat="server" OnClick="btnBorrar_Click" /></td>--%>
                             <td><asp:Button Text="Borrar" CommandArgument='<%#Eval("id") %>' ID="btnBorrar" OnClientClick="return clearOnConfirm();" CommandName="IDClient" OnClick="btnBorrar_Click" runat="server" /> </td>
@@ -87,6 +75,8 @@
         </asp:Repeater>
         </tbody>
     </table>
+        </ContentTemplate>
+                       </asp:UpdatePanel>
         </form>
 
 

@@ -16,7 +16,7 @@ namespace Business
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("select *from vendedor where Estado=1");
+                datos.setearConsulta("select *from vendedor");
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -95,6 +95,38 @@ namespace Business
 
                 datos.setearConsulta("UPDATE VENDEDOR set ESTADO='2' where IDVENDEDOR = '" + txtsearch + "'");
                 datos.ejectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public void BuscarID(int txtsearch)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            List<Vendedor> lista = new List<Vendedor>();
+            
+            try
+            {
+
+                datos.setearConsulta("SELECT *FROM VENDEDOR where IDVENDEDOR = '" + txtsearch + "'");
+                datos.ejectutarAccion();
+                Vendedor aux = new Vendedor();
+                aux.Id = Convert.ToInt32(datos.Lector["IDVENDEDOR"]);
+                aux.Direccion = (string)datos.Lector["DIRECCION"];
+
+                aux.Nombre = (string)datos.Lector["NOMBRE"];
+                aux.Apellido = (string)datos.Lector["APELLIDO"];
+                aux.Email = (string)datos.Lector["EMAIL"];
+                aux.DNI = Convert.ToInt32(datos.Lector["DNI"]);
+                aux.FNacimiento = (DateTime)datos.Lector["FNAC"];
+                aux.Sueldo = (decimal)datos.Lector["SUELDO"];
+                lista.Add(aux);
             }
             catch (Exception ex)
             {

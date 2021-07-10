@@ -36,17 +36,18 @@ namespace TPC___Silva___Plaza
         protected void btn_agregar_Click(object sender, ImageClickEventArgs e)
         {
             
-        //Vendedor Vendedores = new Vendedor();
-        //    VendedorBusiness LVendedores = new VendedorBusiness();
-
+        Vendedor Vendedores = new Vendedor();
+        
+        VendedorBusiness VendeBusiness = new VendedorBusiness();
+            
         //    Ve = LVendedores.LastID() + 1;
-        //    Vendedores.Nombre = txtnombre.Text;
+            //Vendedores.Nombre = txtnombre.Text;
         //    Vendedores.Direccion = txtDir.Text;
         //    Vendedores.Email = txtemail.Value;
         //    Vendedores.Cuit = Convert.ToInt32(txtcuit.Value);
 
-        //    VendeBusiness.agregar(Vendedores);
-        //    Response.Redirect("Clientes.aspx");
+            //    VendeBusiness.agregar(Vendedores);
+            //    Response.Redirect("Clientes.aspx");
         }
 
         protected void btnBorrar_Click(object sender, EventArgs e)
@@ -69,5 +70,28 @@ namespace TPC___Silva___Plaza
                 throw ex;
             }
         }
+
+        protected void btneditar_Click(object sender, EventArgs e)
+        {
+            int IDP = Convert.ToInt32(((Button)sender).CommandArgument);
+
+            try
+            {
+                Vendedor Vendedores = new Vendedor();
+                VendedorBusiness VendeBusiness = new VendedorBusiness();
+
+                VendeBusiness.eliminar(IDP);
+
+                Response.Redirect("Vendedor.aspx");
+
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
+    
 }

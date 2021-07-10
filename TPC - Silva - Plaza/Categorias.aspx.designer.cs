@@ -11,17 +11,8 @@ namespace TPC___Silva___Plaza
 {
 
 
-    public partial class Clientes
+    public partial class Categorias
     {
-
-        /// <summary>
-        /// Control txtInput.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInput;
 
         /// <summary>
         /// Control ScripManager2.
@@ -33,6 +24,15 @@ namespace TPC___Silva___Plaza
         protected global::System.Web.UI.ScriptManager ScripManager2;
 
         /// <summary>
+        /// Control txtInput.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtInput;
+
+        /// <summary>
         /// Control txtnombre.
         /// </summary>
         /// <remarks>
@@ -40,33 +40,6 @@ namespace TPC___Silva___Plaza
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtnombre;
-
-        /// <summary>
-        /// Control txtemail.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtemail;
-
-        /// <summary>
-        /// Control txtcuit1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcuit1;
-
-        /// <summary>
-        /// Control txtDir.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDir;
 
         /// <summary>
         /// Control btnagregar.
@@ -78,12 +51,12 @@ namespace TPC___Silva___Plaza
         protected global::System.Web.UI.WebControls.Button btnagregar;
 
         /// <summary>
-        /// Control repetidor.
+        /// Control ListCategoria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repetidor;
+        protected global::System.Web.UI.WebControls.Repeater ListCategoria;
     }
 }
