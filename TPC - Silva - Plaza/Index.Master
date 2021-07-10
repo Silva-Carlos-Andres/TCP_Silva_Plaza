@@ -474,6 +474,22 @@
                 <li><a href="/Vendedor.aspx"><i class="fa fa-circle-o"></i> AMB</a></li>
 <%--                <li><a href="#"><i class="fa fa-circle-o"></i> Baja</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Modificación</a></li>--%>
+                   </ul>
+                
+
+                               <%--SUB MENU ARTICULOS--%>
+              <a href="#"><i class="fa fa-circle-o"></i> Articulos
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/Categorias.aspx"><i class="fa fa-circle-o"></i> Categorias</a></li>
+                  <li><a href="/Tipos.aspx"><i class="fa fa-circle-o"></i> Tipos</a></li>
+                  <li><a href="/Marcas.aspx"><i class="fa fa-circle-o"></i> Marcas</a></li>
+                  
+              </li>
+
 
 <%--                <li class="treeview">
                   <a href="#"><i class="fa fa-circle-o"></i> Level Two
@@ -484,8 +500,7 @@
                   <ul class="treeview-menu">
                     <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>--%>
-                  </ul>
-                </li>
+                 
 
 
 

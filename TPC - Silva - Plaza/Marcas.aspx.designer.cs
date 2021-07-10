@@ -11,8 +11,17 @@ namespace TPC___Silva___Plaza
 {
 
 
-    public partial class Clientes
+    public partial class Marcas
     {
+
+        /// <summary>
+        /// Control ScripManager1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScripManager1;
 
         /// <summary>
         /// Control txtInput.
@@ -24,13 +33,13 @@ namespace TPC___Silva___Plaza
         protected global::System.Web.UI.WebControls.TextBox txtInput;
 
         /// <summary>
-        /// Control ScripManager2.
+        /// Control lberror.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScripManager2;
+        protected global::System.Web.UI.WebControls.Label lberror;
 
         /// <summary>
         /// Control txtnombre.
@@ -40,33 +49,6 @@ namespace TPC___Silva___Plaza
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtnombre;
-
-        /// <summary>
-        /// Control txtemail.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtemail;
-
-        /// <summary>
-        /// Control txtcuit1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcuit1;
-
-        /// <summary>
-        /// Control txtDir.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDir;
 
         /// <summary>
         /// Control btnagregar.

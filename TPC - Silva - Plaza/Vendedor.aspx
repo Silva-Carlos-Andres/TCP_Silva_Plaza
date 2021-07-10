@@ -71,7 +71,8 @@
                             <td><%#Eval("DNI") %></td>
                             <td><%#Eval("FNacimiento") %></td>
                             <td><%#Eval("Sueldo") %></td>
-                            <td><asp:ImageButton ImageUrl="../Resources/edit_person.png" runat="server" /></td>
+                            <%--<td><asp:ImageButton ImageUrl="../Resources/edit_person.png" runat="server" /></td>--%>
+                            <td><asp:Button Text="Editar" CommandArgument='<%#Eval("id") %>' ID="btneditar" CommandName="IDClient" OnClick="btneditar_Click" runat="server" /> </td>
                             <%--<td><asp:ImageButton ImageUrl="../Resources/delete_person.png" CommandArgument='<%#Eval("id") %>' ID="btnBorrar" CommandName="IDClient" OnClick="btnBorrar_Click" runat="server" /></td>--%>
                             <%-- <td> <asp:Button  Style="background-image:url('Resources/delete_person.png');" ID="btnBorrar" CommandArgument=<%#Eval("id") %> CommandName="IDClient" runat="server" OnClick="btnBorrar_Click" /></td>--%>
                             <td><asp:Button Text="Borrar" CommandArgument='<%#Eval("id") %>' ID="btnBorrar" OnClientClick="return clearOnConfirm();" CommandName="IDClient" OnClick="btnBorrar_Click" runat="server" /> </td>

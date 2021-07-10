@@ -25,7 +25,7 @@ namespace Business
                     aux.Nombre = (string)datos.Lector["Nombre"];
 
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
-                    aux.Marca = new Marca((string)datos.Lector["Marca"]);
+                   // aux.Marca = new Marca((string)datos.Lector["Marca"]);
                     aux.Categoria = new Categoria((string)datos.Lector["Categoria"]);
                     aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
                     aux.Precio = Convert.ToInt32((decimal)datos.Lector["Precio"]);

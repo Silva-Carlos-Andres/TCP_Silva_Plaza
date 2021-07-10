@@ -102,5 +102,93 @@ namespace Business
                 datos.cerrarConexion();
             }
         }
+        public bool ExisteID(int txtsearch)
+        {
+
+            List<Cliente> lista = new List<Cliente>();
+            var Cliente = new Cliente();
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT *FROM Cliente where IDCLIENTE = '" + Convert.ToInt32(txtsearch) + "'");
+                datos.ejecutarLectura();
+
+
+                while (datos.Lector.Read())
+                {
+
+                    if (Convert.ToInt32(datos.Lector["IDCLIENTE"]) == Convert.ToInt32(txtsearch))
+                    {
+                        return true;
+                    }
+
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+        }
+        public void Editar(Cliente objCliente)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+
+                datos.setearConsulta("UPDATE CLIENTE SET NOMBRE = '" + objCliente.Nombre.ToString() + "', EMAIL = '" + objCliente.Email.ToString() + "', CUIT = " + objCliente.Cuit.ToString() + ", DIRECCION = '" + objCliente.Direccion.ToString() + "'  WHERE IDCLIENTE = " + objCliente.Id.ToString() + "");
+                datos.ejectutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public Cliente BuscarID(int txtsearch)
+        {
+
+            
+            var Clientes = new Cliente();
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT *FROM Cliente where IDCliente = '" + txtsearch + "'");
+                datos.ejecutarLectura();
+
+
+                while (datos.Lector.Read())
+                {
+
+                   Clientes.Id = Convert.ToInt32(datos.Lector["IDCliente"]);
+                    Clientes.Nombre = (string)datos.Lector["NOMBRE"];
+                    Clientes.Direccion = (string)datos.Lector["DIRECCION"];
+                    Clientes.Email = (string)datos.Lector["EMAIL"];
+                   Clientes.Cuit = Convert.ToInt32(datos.Lector["CUIT"]);
+                }
+                return Clientes;
+
+
+
+                
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+        }
     }
 }

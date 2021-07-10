@@ -12,6 +12,7 @@ namespace TPC___Silva___Plaza
     public partial class Clientes : System.Web.UI.Page
     {
         public List<Cliente> Clients;
+        public Cliente OClientes;
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -50,17 +51,69 @@ namespace TPC___Silva___Plaza
 
         protected void btn_agregar_Click(object sender, ImageClickEventArgs e)
         {
+            
+
+            
+        }
+
+        protected void btnagregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btneditar_Click(object sender, EventArgs e)
+        {
+            int IDM = Convert.ToInt32(((Button)sender).CommandArgument);
+            Session["ID"] = Convert.ToInt32(IDM);
+            Cliente Clientes = new Cliente();
+            ClienteBusiness LClientes = new ClienteBusiness();
+            try
+            {
+
+
+
+
+                Clientes = LClientes.BuscarID(IDM);
+                txtnombre.Text = Clientes.Nombre;
+                txtemail.Value = Clientes.Email;
+                txtcuit1.Text = Convert.ToString(Clientes.Cuit);
+                txtDir.Text = Clientes.Direccion;
+                    
+
+
+
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        protected void btnagregar_Click1(object sender, EventArgs e)
+        {
             Cliente clientes = new Cliente();
+            int IDM = Convert.ToInt32(Session["ID"]);
             ClienteBusiness clientsBusiness = new ClienteBusiness();
 
-            clientes.Id = clientsBusiness.LastID() + 1;
             clientes.Nombre = txtnombre.Text;
             clientes.Direccion = txtDir.Text;
             clientes.Email = txtemail.Value;
-            clientes.Cuit = Convert.ToInt32(txtcuit.Value);
+            clientes.Cuit = Convert.ToInt32(txtcuit1.Text);
 
-            clientsBusiness.agregar(clientes);
-            Response.Redirect("Clientes.aspx");
+            if (clientsBusiness.ExisteID(IDM))
+            {
+                clientes.Id = IDM;
+                clientsBusiness.Editar(clientes);
+                Response.Redirect("Clientes.aspx");
+            }
+            else
+            {
+
+                clientes.Id = clientsBusiness.LastID() + 1;
+                clientsBusiness.agregar(clientes);
+                Response.Redirect("Clientes.aspx");
+            }
         }
     }
 }
