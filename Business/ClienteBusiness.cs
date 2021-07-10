@@ -141,7 +141,7 @@ namespace Business
             try
             {
 
-                datos.setearConsulta("UPDATE CLIENTE SET (NOMBRE = '" + objCliente.Nombre.ToString() + "', EMAIL = '" + objCliente.Email.ToString() + "', CUIT = " + objCliente.Cuit.ToString() + ", DIRECCION = '" + objCliente.Direccion.ToString() + "' ) WHERE IDCLIENTE = " + objCliente.Id.ToString() + "");
+                datos.setearConsulta("UPDATE CLIENTE SET NOMBRE = '" + objCliente.Nombre.ToString() + "', EMAIL = '" + objCliente.Email.ToString() + "', CUIT = " + objCliente.Cuit.ToString() + ", DIRECCION = '" + objCliente.Direccion.ToString() + "'  WHERE IDCLIENTE = " + objCliente.Id.ToString() + "");
                 datos.ejectutarAccion();
             }
             catch (Exception ex)
