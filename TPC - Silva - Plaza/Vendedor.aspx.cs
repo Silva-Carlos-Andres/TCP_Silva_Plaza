@@ -33,33 +33,38 @@ namespace TPC___Silva___Plaza
             }
         }
 
-        protected void btn_agregar_Click(object sender, ImageClickEventArgs e)
+        protected void btnagregar_Click(object sender, EventArgs e)
         {
-            
-        Vendedor Vendedores = new Vendedor();
-        
-        VendedorBusiness VendeBusiness = new VendedorBusiness();
-            
-        //    Ve = LVendedores.LastID() + 1;
-            //Vendedores.Nombre = txtnombre.Text;
-        //    Vendedores.Direccion = txtDir.Text;
-        //    Vendedores.Email = txtemail.Value;
-        //    Vendedores.Cuit = Convert.ToInt32(txtcuit.Value);
 
-            //    VendeBusiness.agregar(Vendedores);
-            //    Response.Redirect("Clientes.aspx");
+            Vendedor Vendedores = new Vendedor();
+            int DNI = Convert.ToInt32(Session["DNI"]);
+            VendedorBusiness VendeBusiness = new VendedorBusiness();
+
+            if (VendeBusiness.ExisteID(DNI))
+            {
+
+                Vendedores.Nombre = txtnombre.Text;
+                Vendedores.Direccion = txtDir.Text;
+                Vendedores.Email = txtemail.Value;
+                Vendedores.Cuit = Convert.ToInt32(txtcuit.Value);
+
+                VendeBusiness.Editar(DNI, Vendedores);
+                Response.Redirect("Marcas.aspx");
+            }
+            VendeBusiness.agregar(Vendedores);
+            Response.Redirect("Clientes.aspx");
         }
 
         protected void btnBorrar_Click(object sender, EventArgs e)
         {
-            int IDP = Convert.ToInt32(((Button)sender).CommandArgument);
+            int DNI = Convert.ToInt32(((Button)sender).CommandArgument);
 
             try
             {
                 Vendedor Vendedores = new Vendedor();
                 VendedorBusiness VendeBusiness = new VendedorBusiness();
 
-                VendeBusiness.eliminar(IDP);
+                VendeBusiness.eliminar(DNI);
 
                 Response.Redirect("Vendedor.aspx");
 
@@ -73,14 +78,14 @@ namespace TPC___Silva___Plaza
 
         protected void btneditar_Click(object sender, EventArgs e)
         {
-            int IDP = Convert.ToInt32(((Button)sender).CommandArgument);
+            int DNI = Convert.ToInt32(((Button)sender).CommandArgument);
 
             try
             {
                 Vendedor Vendedores = new Vendedor();
                 VendedorBusiness VendeBusiness = new VendedorBusiness();
 
-                VendeBusiness.eliminar(IDP);
+                VendeBusiness.eliminar(DNI);
 
                 Response.Redirect("Vendedor.aspx");
 

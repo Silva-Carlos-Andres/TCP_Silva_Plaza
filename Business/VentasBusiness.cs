@@ -73,30 +73,30 @@ namespace Business
             }
         }
 
-        public void NuevaVenta(Venta venta)
-        {
-            AccesoDatos datos = new AccesoDatos();
+        //public void NuevaVenta(Venta venta)
+        //{
+        //    AccesoDatos datos = new AccesoDatos();
 
-            try
-            {
-                datos.setearConsulta("EXEC SP_NuevaVenta " + venta.IdVendedor.ToString() +", "+ venta.IdCliente.ToString() + ", " + venta.Monto.ToString() + ", " + venta.Fecha.ToString());
-                datos.ejecutarLectura();
+        //    try
+        //    {
+        //        datos.setearConsulta("EXEC SP_NuevaVenta " + venta..ToString() +", "+ venta.IdCliente.ToString() + ", " + venta.Monto.ToString() + ", " + venta.Fecha.ToString());
+        //        datos.ejecutarLectura();
 
-                for(var i=0; i < venta.Articulos.Length; i= i+2)
-                {
-                    datos.setearConsulta("EXEC SP_NuevaListaArticuloVenta " + venta.Id.ToString() + ", " + venta.Articulos[i].ToString() + ", " + venta.Articulos[i + 1].ToString());
-                    datos.ejecutarLectura();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-        }
+        //        for(var i=0; i < venta.Articulos.Length; i= i+2)
+        //        {
+        //            datos.setearConsulta("EXEC SP_NuevaListaArticuloVenta " + venta.Id.ToString() + ", " + venta.Articulos[i].ToString() + ", " + venta.Articulos[i + 1].ToString());
+        //            datos.ejecutarLectura();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    finally
+        //    {
+        //        datos.cerrarConexion();
+        //    }
+        //}
 
     }
 
