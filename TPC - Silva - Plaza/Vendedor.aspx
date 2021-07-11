@@ -43,7 +43,8 @@
      <asp:Label Text="Sueldo: " runat="server" />
     <asp:TextBox ID="txtsueldo" Width="60" runat="server"/>
 
-        <asp:ImageButton ID="btn_agregar" OnClick="btn_agregar_Click" ImageUrl="../Resources/add_person1.png" runat="server" />
+<%--        <asp:ImageButton ID="btn_agregar" OnClick="btn_agregar_Click" ImageUrl="../Resources/add_person1.png" runat="server" />--%>
+        <asp:Button Text="Agregar" CommandArgument='<%#Eval("id") %>' ID="btnagregar" OnClick="btnagregar_Click" runat="server" />
 
         <table class="table table-striped table-hover">
         <thead>
