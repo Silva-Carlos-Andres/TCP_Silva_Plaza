@@ -8,7 +8,7 @@ namespace Dominio
         public DateTime Fecha { get; set; }
         public int IdCliente { get; set; }
         public int[] Articulos { get; set; }
-        public int IdVendedor { get; set; }
+        public Vendedor Vendedor { get; set; }
         public Decimal Monto { get; set; }
     }
 }

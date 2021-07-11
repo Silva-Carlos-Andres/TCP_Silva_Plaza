@@ -12,6 +12,15 @@
         //{
         //    Id = IdProveedor;
         //}
+        public Proveedor(string nombre)
+        {
+            Nombre = nombre;
+        }
+        public Proveedor() { }
+        public override string ToString()
+        {
+            return Nombre;
+        }
     }
 
 }

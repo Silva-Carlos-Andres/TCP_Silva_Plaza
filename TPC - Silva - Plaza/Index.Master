@@ -373,18 +373,13 @@
           </a>
         </li>
 
-        <li class="treeview">
-          <a href="#">
-            <i class="fas fa-donate"></i> <span>Ingresos</span>
+        <li>
+          <a href="../Ventas.aspx">
+            <i class="fa fa-credit-card"></i> <span>Ventas</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+             
             </span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="/Ventas.aspx"><i class="fa fa-circle-o"></i> Ventas</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Presupuestos</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Otros ingresos</a></li>
-          </ul>
         </li>
 
 
@@ -485,7 +480,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/Categorias.aspx"><i class="fa fa-circle-o"></i> Categorias</a></li>
-                  <li><a href="/Tipos.aspx"><i class="fa fa-circle-o"></i> Tipos</a></li>
+                  <li><a href="/Tipo.aspx"><i class="fa fa-circle-o"></i> Tipos</a></li>
                   <li><a href="/Marcas.aspx"><i class="fa fa-circle-o"></i> Marcas</a></li>
                   
               </li>

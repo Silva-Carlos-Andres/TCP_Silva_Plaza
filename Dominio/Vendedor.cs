@@ -22,5 +22,16 @@ namespace Dominio
         //{
         //    Id = IdVendedor;
         //}
+
+        public Vendedor(string nombre, string apellido)
+        {
+            Nombre = nombre;
+            Apellido = apellido;
+        }
+        public Vendedor() { }
+        public override string ToString()
+        {
+            return Nombre;
+        }
     }
 }

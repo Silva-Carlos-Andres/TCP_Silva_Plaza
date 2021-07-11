@@ -97,6 +97,7 @@
     <Content Include="NuevaVenta.aspx" />
     <Content Include="Proveedores.aspx" />
     <Content Include="Styles\Styles.css" />
+    <Content Include="Tipo.aspx" />
     <Content Include="Vendedor.aspx" />
     <Content Include="Ventas.aspx" />
     <Content Include="Web.config" />
@@ -166,6 +167,13 @@
     </Compile>
     <Compile Include="Proveedores.aspx.designer.cs">
       <DependentUpon>Proveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo.aspx.cs">
+      <DependentUpon>Tipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tipo.aspx.designer.cs">
+      <DependentUpon>Tipo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vendedor.aspx.cs">
       <DependentUpon>Vendedor.aspx</DependentUpon>

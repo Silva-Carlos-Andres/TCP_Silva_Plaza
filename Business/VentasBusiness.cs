@@ -16,7 +16,7 @@ namespace Business
 
             try
             {
-                datos.setearConsulta("SELECT * FROM Ventas");
+                datos.setearConsulta("SELECT Id, Fecha, Nombre, Apellido, Precio FROM Ventas");
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
@@ -24,7 +24,7 @@ namespace Business
 
                     aux.Id = (int)datos.Lector["Id"];
                     aux.Fecha = (DateTime)datos.Lector["Fecha"];
-                    //aux.Vendedor = new Vendedor((int)datos.Lector["IDVENDEDOR"]);
+                    aux.Vendedor = new Vendedor((string)datos.Lector["Nombre"], (string)datos.Lector["Apellido"]);
                     aux.Monto = (Decimal)datos.Lector["Precio"];
 
                     lista.Add(aux);
@@ -56,7 +56,7 @@ namespace Business
 
                     aux.Id = (int)datos.Lector["Id"];
                     aux.Fecha = (DateTime)datos.Lector["Fecha"];
-                    //aux.Vendedor = new Vendedor((int)datos.Lector["IDVENDEDOR"]);
+                    aux.Vendedor = new Vendedor((string)datos.Lector["Nombre"], (string)datos.Lector["Apellido"]);
                     aux.Monto = (Decimal)datos.Lector["Precio"];
 
                     lista.Add(aux);
